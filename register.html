@@ -1,0 +1,86 @@
+<html>
+
+<head>
+  
+<link rel ="stylesheet" href="registercss.css">
+</head>
+<script src="registerjs.js"></script>
+<body>
+<br><center>
+<h1>Student registration form</h1> </center>
+<div class="main-box">
+  <form>
+<table   id="table1">
+<tbody>
+<tr>
+<th><label>First Name</label></th>
+<td><input type="text" class="inp" id="fname" required></td>
+</tr>
+<tr>
+<th><label>Last Name</label></th>
+<td><input type="text" class="inp" id="un"></td>
+</tr>
+<tr>
+
+<tr>
+<th><label>Email</label></th>
+<td><input type="email" class="inp" id="email"></td>
+</tr>
+<tr>
+<th><label>Gender</label></th>
+<td>&nbsp;&nbsp;&nbsp;
+<input type="radio" name="g" id="female">Female &nbsp;
+<input type="radio"name="g" id="male">Male &nbsp;
+<input type="radio"name="g" id="other">Others</td>
+</tr>
+<tr>
+<th><label>Skills</label></th>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="checkbox" name="cb" id="html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>HTML </label><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="checkbox" name="g" id="css">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>CSS</label><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="checkbox" name="g" id="js">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>JS</label>
+
+</tr>
+<tr>
+<tr>
+<th><label>DOB</label></th>
+<td><input type="date" class="inp" id="dob"></td>
+</tr>
+<tr>
+<th>
+<label>Address</label>
+</th>
+<td><textarea rows="3" cols="30" id="address">
+</textarea>
+</td>
+</tr>
+<tr id="btn">
+<td colspan="3"><input type="button" class="register" onclick="add()" id="btn" name="button" value="SUBMIT"></td>
+</tr>
+</tbody>
+</table>
+</form>
+
+</div>
+<br>
+
+  <center>
+  <h1 >Registered student details</h1>
+  <table border="1" id="display">
+    
+   <thead>
+    <tr><th>First Name</th>
+      <th>Last Name</th>
+     <th>Email</th>
+     <th>DOB</th>
+     <th>Address</th>
+    </tr>
+   </thead>
+  </table>
+</center>
+
+</body>
+</html>
